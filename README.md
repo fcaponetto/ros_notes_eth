@@ -80,6 +80,10 @@ Publish a message to a topic:
 ```
 > rostopic pub /topic type args
 ```
+Show the service definition with
+```
+rossrv show $(rosservice type /service_name)
+```
 
 ### ROS Services
 * Request/response communication between nodes is realized with services
