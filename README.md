@@ -81,6 +81,25 @@ Publish a message to a topic:
 > rostopic pub /topic type args
 ```
 
+### ROS Services
+* Request/response communication between nodes is realized with services
+    * The service server advertises the service
+    * The service client accesses this service
+* Similar in structure to messages, services are defined in *.srv files
+
+List available services with:
+```
+> rosservice list
+```
+Show the type of a service
+```
+> rosservice type /service_name
+```
+Call a service with the request contents:
+```
+>  rosservice call /service_name args
+```
+
 ### catkin Build System
 
 * catkin is the ROS build system to generate executables, libraries, and interfaces
