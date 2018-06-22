@@ -1,6 +1,7 @@
-[img01]: ./images/ros_nodes.png "Ros Nodes"
-[img02]: ./images/ros_topics.png "Ros Topics"
-[img03]: ./images/ros_messages.png "Ros Messages"
+[img01]: ./images/ros_master.png "Ros Master"
+[img02]: ./images/ros_nodes.png "Ros Nodes"
+[img03]: ./images/ros_topics.png "Ros Topics"
+[img04]: ./images/ros_messages.png "Ros Messages"
 
 # ROS Overview
 
@@ -25,6 +26,8 @@ Check your workspace with:
 ```
 
 ### ROS Master
+![alt text][img01]
+
 * Manages the communication between nodes
 * Every node registers at startup with the master
 
@@ -34,7 +37,8 @@ Start a master with:
 ```
 
 ### ROS Nodes
-![alt text][img01]
+![alt text][img02]
+
 * Single-purpose, executable program
 * Individually compiled, executed, and managed
 * Organized in packages
@@ -53,7 +57,8 @@ Retrieve information about a node with:
 ```
 
 ### ROS Topics
-![alt text][img02]
+![alt text][img03]
+
 * Nodes communicate over topics
     * Nodes can publish or subscribe to a topic
     * Typically, 1 publisher and n subscribers
@@ -73,7 +78,8 @@ Show information about a topic with:
 ```
 
 ### ROS Messages
-![alt text][img03]
+![alt text][img04]
+
 * Data structure defining the type of a topic
 * Compromised of a nested structure of integers, floats, booleans, strings etc. and arrays of objects
 * Defined in *.msg files
