@@ -5,7 +5,7 @@
 
 # ROS Overview
 
-[ROS course from ETH Zurich](http://www.rsl.ethz.ch/education-students/lectures/ros.html)
+All the credits for the slides and images goes to Robotic Systems Lab @ ETH Zurich:  [Programming for Robotics](http://www.rsl.ethz.ch/education-students/lectures/ros.html)
 
 Ros originally was developed in 2007 at the Stanford Artificial Intelligence Laboratory
 
