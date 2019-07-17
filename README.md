@@ -116,7 +116,7 @@ Call a service with the request contents:
 >  rosservice call /service_name args
 ```
 
-### catkin Build System
+## Catkin best practices
 
 * catkin is the ROS build system to generate executables, libraries, and interfaces
 * We suggest to use the Catkin Command Line Tools.  
@@ -126,15 +126,49 @@ Navigate to your catkin workspace with:
 ```
 > cd ~/catkin_ws
 ```
+Create the src forlder and init the wokspace:
+```
+mkdir src
+cd src
+catkin_init_workspace
+```
+Make the simbolic link of the repository downloaded:
+```
+cd src
+ln -s /path/of/the/repo .
+```
 Build a package with:
 ```
-> catkin build package_name
+catkin build package_name
 ```
 Whenever you build a new package, update your environment:
 ```
 > source devel/setup.bash
 ```
-If necessary, clean the entire build and devel space with:
+If necessary, *clean* the entire build and devel space with:
 ```
 > catkin clean
 ```
+
+## Example
+* ├── build
+* │   ├── ...
+* │   ├── ...
+* │   ├── ...
+* ├── CMakeLists.txt
+* ├── devel
+* │   ├── ...
+* │   ├── ...
+* │   ├── ...
+* │   └── share
+* ├── logs
+* │   ├── ...
+* │   ├── ...
+* │   ├── ...
+* └── src
+*    ├── CMakeLists.txt -> /opt/ros/kinetic/share/catkin/cmake/toplevel.cmake
+*    ├── kuka-lwr-ros -> ~/workspace/kuka/kuka-lwr-ros
+*    ├── ...
+*    ├── ...
+
+**NOTE: DON'T TOUCH THE DEVEL OR BUILD FOLDER**
