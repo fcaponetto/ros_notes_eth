@@ -162,7 +162,11 @@ Ros action are similar to ROS services, but faster. Moreover, it is possible:
 
 Best way to implement interfaces to timeextended, goal-oriented behaviors. Internally, actions **are implemented with a set of topics**
 
+## Debug
 
+```
+ catkin config --cmake-args -DCMAKE_BUILD_TYPE=Debug
+ ```
 
 ## Catkin best practices
 
