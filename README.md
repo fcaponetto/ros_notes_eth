@@ -31,7 +31,7 @@ Check your workspace with:
 > echo $ROS_PACKAGE_PATH
 ```
 
-### ROS Master
+## ROS Master
 
 ![alt text][img01]
 
@@ -44,7 +44,7 @@ Start a master with:
 > roscore
 ```
 
-### ROS Nodes
+## ROS Nodes
 
 ![alt text][img02]
 
@@ -70,7 +70,7 @@ Retrieve information about a node with:
 > rosnode info node_name
 ```
 
-### ROS Topics
+## ROS Topics
 
 ![alt text][img03]
 
@@ -97,7 +97,7 @@ Show information about a topic with:
 > rostopic info /topic
 ```
 
-### ROS Messages
+## ROS Messages
 
 ![alt text][img04]
 
@@ -123,7 +123,7 @@ Show the service definition with
 rossrv show $(rosservice type /service_name)
 ```
 
-### ROS Services
+## ROS Services
 
 * Request/response communication between nodes is realized with services
   * The service server advertises the service
