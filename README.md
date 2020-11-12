@@ -2,7 +2,7 @@
 [img02]: ./images/ros_nodes.png "Ros Nodes"
 [img03]: ./images/ros_topics.png "Ros Topics"
 [img04]: ./images/ros_messages.png "Ros Messages"
-[img05]: ./images/ros_ation.png "Ros Action"
+[img05]: ./images/ros_action.png "Ros Action"
 
 # ROS Overview
 
