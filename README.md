@@ -162,6 +162,34 @@ Ros action are similar to ROS services, but faster. Moreover, it is possible:
 
 Best way to implement interfaces to timeextended, goal-oriented behaviors. Internally, actions **are implemented with a set of topics**
 
+## Writing a Simple Publisher and Subscriber (C++)
+
+![alt text](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29)
+
+## ros::spinOnce vs ros::spin
+
+`ros::spinOnce()` asks ROS to execute all the pending callbacks of subscribers and timers once, then return control back to us. You can keep doing your work.
+
+```
+ros::spinOnce() // ask ROS to handle callbacks  
+doYourWork()    // this line will be executed
+```
+
+`ros::spin()` is like a button without going back, which means asking ROS to wait for and execute callbacks until the node shuts down. You fully give control to ROS.
+
+```
+ros::spin()  // ask ROS to handle callbacks
+youWantToDoYourWork()  // this line will never be executed.
+```
+
+Roughly speaking, `ros::spin()` is equivalent to the loop below:
+
+```
+while(ros::ok()) {
+  ros::spinOnce();
+}
+```
+
 ## Debug
 
 ```
