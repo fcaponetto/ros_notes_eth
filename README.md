@@ -164,7 +164,7 @@ Best way to implement interfaces to timeextended, goal-oriented behaviors. Inter
 
 ## Writing a Simple Publisher and Subscriber (C++)
 
-![alt text](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29)
+[Writing a Simple Publisher and Subscriber (C++)](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29)
 
 ## ros::spinOnce vs ros::spin
 
